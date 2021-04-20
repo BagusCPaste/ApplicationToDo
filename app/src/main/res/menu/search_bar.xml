@@ -6,7 +6,7 @@
         android:title="Cari"
         android:orderInCategory="1"
         android:icon="@drawable/ic_search"
-        app:actionViewClass="android.support.v"
+        app:actionViewClass="android.widget.SearchView"
         app:showAsAction="always|collapseActionView"/>
 
 </menu>

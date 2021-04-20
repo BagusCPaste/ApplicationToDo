@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bagus.applicationtodo.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.MyViewHolder> {
@@ -71,5 +72,10 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.MyViewHolder> 
             statusToDo = (TextView)itemView.findViewById(R.id.statusTodo);
              imageToDo = (ImageView)itemView.findViewById(R.id.gambarTodo);
         }
+    }
+    public void setFilter(ArrayList<ToDo> filterList){
+        todo = new ArrayList<>();
+        todo.addAll(filterList);
+        notifyDataSetChanged();
     }
 }

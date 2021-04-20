@@ -35,7 +35,7 @@ public class AddToDo extends AppCompatActivity {
         statusToDo = findViewById(R.id.status);
         gambar = findViewById(R.id.gambar);
 
-        btnUpdate = findViewById(R.id.btnAdd);
+        btnUpdate = findViewById(R.id.btnAddd);
         btnDelete = findViewById(R.id.btnCancel);
 
         myDb = new DatabaseHelper(this);
